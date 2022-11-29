@@ -1,28 +1,29 @@
-*{
+body{
     padding: 0;
     margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #game{
-    width: 500px;
+    width: 100%;
     height: 200px;
-    border: 1px solid black;
 }
 
 #character{
     width: 20px;
     height: 50px;
-    background-color: red;
     position: relative;
-    top: 150px;
+    top: 350px;
 }
 .animate{
     animation: jump 600ms;
 }
+
 @keyframes jump{
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
+    0%{top: 300px;}
+    30%{top: 270px;}
+    70%{top: 270px;}
+    100%{top: 300px;}
 }
 
 #block{
@@ -30,11 +31,11 @@
     height: 20px;
     background-color: blue;
     position: relative;
-    top: 130px;
+    top: 350px;
     left: 480px;
-    animation: block 1000ms infinite linear;
+    animation: block 2s infinite linear;
 }
 @keyframes block{
-    0%{left:480px;}
+    0%{left:100%;}
     100%{left:-40px;}
 }
